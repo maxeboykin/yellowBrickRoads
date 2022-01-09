@@ -5,7 +5,7 @@ import Node from './Node'
 
 const AllNodes = () => {
 
-  const [nodes, setNode] = useState([]);
+  const [bricks, setBricks] = useState([]);
   useEffect(() => {
     const nodes = [];
     for(let row = 0; row < 5; row++){
@@ -14,14 +14,14 @@ const AllNodes = () => {
         currentRow.push([]);
       }
       nodes.push(currentRow);
-      setNode(nodes);
+      setBricks(nodes);
     }
   }, []);
 
 
   return (
-    <div>
-      {nodes.map((row, index) => {
+    <div className="grid">
+      {bricks.map((row, index) => {
         return <div key={index}>
           {row.map((node, index) => <Node key={index}></Node>)}
           </div>

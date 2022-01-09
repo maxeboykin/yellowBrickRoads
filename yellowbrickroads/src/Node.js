@@ -4,8 +4,8 @@ import {useDispatch, useSelector} from "react-redux";
 const Node = () => {
 
   return(
-    <div>
-      Node
+    <div className="node">
+
     </div>
   )
 
