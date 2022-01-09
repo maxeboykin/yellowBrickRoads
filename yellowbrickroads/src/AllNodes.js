@@ -22,8 +22,8 @@ const AllNodes = () => {
   return (
     <div>
       {nodes.map((row, index) => {
-        return <div>
-          {row.map((node, index) => <Node></Node>)}
+        return <div key={index}>
+          {row.map((node, index) => <Node key={index}></Node>)}
           </div>
       })}
     </div>
