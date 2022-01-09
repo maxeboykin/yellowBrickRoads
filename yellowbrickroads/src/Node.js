@@ -1,9 +1,14 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-const node = () => {
+const Node = () => {
 
+  return(
+    <div>
+      Node
+    </div>
+  )
 
 }
 
-export default node;
+export default Node;

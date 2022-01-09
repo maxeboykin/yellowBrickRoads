@@ -3,17 +3,18 @@ import {useDispatch, useSelector} from "react-redux";
 import Node from './Node'
 
 
-const YellowBrickRoad = () => {
+const AllNodes = () => {
 
   const [nodes, setNode] = useState([]);
   useEffect(() => {
     const nodes = [];
-    for(let row = 0; row < 15; row++){
+    for(let row = 0; row < 5; row++){
       const currentRow = [];
-      for(let col = 0; col < 50; col++){
+      for(let col = 0; col < 10; col++){
         currentRow.push([]);
       }
       nodes.push(currentRow);
+      setNode(nodes);
     }
   }, []);
 
@@ -25,9 +26,8 @@ const YellowBrickRoad = () => {
           {row.map((node, index) => <Node></Node>)}
           </div>
       })}
-      <Node>Foo</Node>
     </div>
   )
 }
 
-export default YellowBrickRoad;
+export default AllNodes;

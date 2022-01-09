@@ -1,11 +1,11 @@
-import yellowBrickRoad from "./yellowBrickRoad";
+import AllNodes from "./AllNodes";
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <yellowBrickRoad></yellowBrickRoad>
+      <AllNodes></AllNodes>
     </div>
   );
 }
