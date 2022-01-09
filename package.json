@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/maxxboykin/yellowBrickRoads#readme",
   "dependencies": {
-    "create-react-app": "^5.0.0"
+    "create-react-app": "^5.0.0",
+    "react-redux": "^7.2.6"
   }
 }
